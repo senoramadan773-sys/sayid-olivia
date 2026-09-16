@@ -11,7 +11,20 @@
 <style>
 :root{--dark:#17130f;--paper:#fbf8f2;--cream:#f3ece1;--ink:#30271f;--muted:#796b5b;--line:#cdbda7}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--dark);color:var(--ink);font-family:Montserrat,sans-serif}.inv{width:min(100%,560px);margin:auto;background:var(--paper);overflow:hidden}
-.cover{height:100svh;min-height:650px;position:relative;display:flex;align-items:flex-end;text-align:center;color:#fff;overflow:hidden}.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(#0000 38%,#000b 100%)}.cover-content{position:relative;z-index:2;width:100%;padding:50px 24px}.kicker,.eyebrow,.small{font-size:10px;letter-spacing:.32em;text-transform:uppercase}.names{font:500 58px/.84 "Cormorant Garamond",serif;margin:18px 0}.date{font-size:11px;letter-spacing:.35em}.open{margin-top:30px;padding:13px 28px;border:1px solid #fff9;border-radius:30px;background:#18130e55;color:#fff;letter-spacing:.2em;font-size:9px;text-transform:uppercase}
+.cover{height:100svh;min-height:650px;position:relative;display:flex;align-items:flex-end;text-align:center;color:#fff;overflow:hidden}.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(#0000 38%,#000b 100%)}.cover-content{position:relative;z-index:2;width:100%;padding:50px 24px}.kicker,.eyebrow,.small{font-size:10px;letter-spacing:.32em;text-transform:uppercase}.names{
+  font:500 58px/.9 "Cormorant Garamond",serif;
+  margin:18px 0;
+}
+
+.names span{
+  display:block;
+}
+
+.names .amp{
+  font-size:.55em;
+  line-height:1.4;
+  margin:8px 0;
+}date{font-size:11px;letter-spacing:.35em}.open{margin-top:30px;padding:13px 28px;border:1px solid #fff9;border-radius:30px;background:#18130e55;color:#fff;letter-spacing:.2em;font-size:9px;text-transform:uppercase}
 .pad{padding:75px 28px}.center{text-align:center}.serif{font-family:"Cormorant Garamond",serif}h2{font:500 47px/1 "Cormorant Garamond",serif;margin:13px 0 20px}.intro{background:var(--cream)}p{font-size:13px;line-height:1.9;color:#685b4e}.orn{margin:24px 0;color:#a88f70}.orn:before,.orn:after{content:"";display:inline-block;vertical-align:middle;width:55px;height:1px;background:var(--line);margin:0 14px}
 .fullphoto{width:100%;display:block;height:620px;object-fit:cover}.fullphoto.two{height:650px}
 .event-grid{display:grid;gap:16px;margin-top:30px}.card{padding:28px 18px;border:1px solid #d8cdbd;text-align:center;background:#fffdf9}.card strong{font-size:10px;letter-spacing:.22em}.card h3{font:500 31px "Cormorant Garamond",serif;margin:9px 0}.card p{margin:5px 0}
@@ -29,7 +42,11 @@
 <img src="hero.jpg" alt="SAYID FADILLAH & OLIVIA GANDA DIPOERA">
 <div class="cover-content">
 <div class="kicker">The Wedding Of</div>
-<div class="names">SAYID FADILLAH &amp; OLIVIA GANDA DIPOERA</div>
+<div class="names">
+  <span>SAYID FADILLAH</span>
+  <span class="amp">&amp;</span>
+  <span>OLIVIA GANDA DIPOERA</span>
+</div>
 <div class="date">19 • 09 • 2026</div>
 <button class="open" onclick="document.getElementById('welcome').scrollIntoView({behavior:'smooth'})">Open Invitation</button>
 </div>
@@ -95,7 +112,7 @@
 
 <section class="closing">
 <img src="portrait-2.jpg" alt="SAYID FADILLAH & OLIVIA GANDA DIPOERA">
-<div class="closing-content"><div class="small">Thank you for being part of our day</div><div class="names">SAYID FADILLAH &amp; OLIVIA GANDA DIPOERA</div><div class="date">19 • 09 • 2026</div></div>
+<div class="closing-content"><div class="small">Thank you for being part of our day</div><div class="names">   <span>SAYID FADILLAH</span>   <span class="amp">&amp;</span>   <span>OLIVIA GANDA DIPOERA</span> </div><div class="date">19 • 09 • 2026</div></div>
 </section>
 
 </main>
